@@ -9,7 +9,7 @@
           "description": "hanime1.me",
           "iconUrl": "https://hanime1.me//favicon.ico",
           "searchConfig": {
-            "searchUrl": "https://hanime1.me/search?wd={keyword}",
+            "searchUrl": "https://hanime1.me/search?query={keyword}",
             "searchUseOnlyFirstWord": true,
             "searchRemoveSpecial": true,
             "searchUseSubjectNamesCount": 1,
