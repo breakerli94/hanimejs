@@ -3,7 +3,7 @@
     "mediaSources": [
       {
         "factoryId": "web-selector",
-        "version": 2,
+        "version": 1,
         "arguments": {
           "name": "Hanime",
           "description": "hanime1.me",
@@ -12,22 +12,17 @@
             "searchUrl": "https://hanime1.me/search?query={keyword}",
             "searchUseOnlyFirstWord": true,
             "searchRemoveSpecial": true,
-            "searchUseSubjectNamesCount": 1,
+            "searchUseSubjectNamesCount": 12,
             "rawBaseUrl": "",
             "requestInterval": 3000,
             "subjectFormatId": "a",
             "selectorSubjectFormatA": {
-              "selectLists": "div.result-list > a",
+              "selectLists": ".multiple-link-wrapper > a.overlay",
               "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".result-list .result-title",
-              "selectLinks": ".result-list .result-link",
-              "preferShorterName": true
-            },
-            "selectorSubjectFormatJsonPathIndexed": {
-              "selectLinks": "$[*]['url', 'link']",
-              "selectNames": "$[*]['title','name']",
+              "selectNames": ".card-mobile-panel.inner > div:last-child",
+              "selectCovers": ".card-mobile-panel.inner img:nth-child(2)",
               "preferShorterName": true
             },
             "channelFormatId": "index-grouped",
